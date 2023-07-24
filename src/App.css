@@ -1,0 +1,22 @@
+.App {
+  min-width: 100vw;
+  height: 100vh;
+  transition: all 0.9s ease-in-out;
+}
+.pages {
+  height: 75%;
+  min-height: 75%;
+}
+
+@media (min-width: 768px) {
+  .App {
+    display: flex;
+  }
+  .dashboard {
+    width: 20%;
+  }
+  .pages {
+    width: 80%;
+    height: 100%;
+  }
+}

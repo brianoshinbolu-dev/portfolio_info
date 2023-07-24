@@ -1,11 +1,20 @@
 .dashboard {
   z-index: 4;
+  max-height: 34%;
   position: relative;
-  width: 100vw;
-  background-color: var(--primary-color);
+  max-width: 100%;
+  background-color: black;
   text-align: center;
   color: var(--text-color);
   text-decoration: none;
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+    &:hover {
+      color: var(--accent-color);
+      cursor: pointer;
+    }
+  }
   img {
     border: 1px solid black;
     border-radius: 50%;
@@ -40,14 +49,10 @@
     justify-content: center;
     flex-wrap: wrap;
     transition: all 0.3s ease-in-out;
+
     li {
-      text-decoration: none;
       margin: 5px;
       list-style: none;
-      &:hover {
-        color: var(--secondary-color);
-        cursor: pointer;
-      }
     }
   }
 
@@ -55,7 +60,7 @@
     span {
       margin: 5px;
       &:hover {
-        color: var(--secondary-color);
+        color: var(--accent-color);
         cursor: pointer;
       }
     }
@@ -71,21 +76,25 @@
   width: 100vw;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   /* Styles for screens with a width between 769px and 1024px (e.g., tablets) */
   .dashboard {
     z-index: 4;
     position: relative;
-    height: 100vh;
-    width: 25%;
-    background-color: var(--primary-color);
+    min-height: 100vh;
+    max-width: 100%;
+    // background-color: var(--primary-color);
     color: var(--text-color);
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     img {
-      margin-top: 50px;
+      margin-top: 5%;
       border: 1px solid black;
       border-radius: 50%;
-      width: 200px;
+      width: 50%;
       max-width: 100%;
       padding: 10px;
     }
@@ -98,13 +107,14 @@
       font-size: large;
       display: block;
       transition: all 0.3s ease-in-out;
-      margin: 40px;
+      margin: 30px;
+
       li {
-        text-decoration: none;
-        margin: 15px;
+        // width: 85%;
+        margin: 15px 0 15px 0;
         list-style: none;
         &:hover {
-          color: var(--secondary-color);
+          color: var(--accent-color);
           cursor: pointer;
         }
       }

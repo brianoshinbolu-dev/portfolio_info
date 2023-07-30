@@ -1,0 +1,17 @@
+.bg {
+  text-align: center;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  padding: auto;
+  background-image: url("../../assets/bg.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .projects {
+    //   text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -1,9 +1,17 @@
-import React from 'react'
+import React from "react";
+import { Card } from "../../components";
+import Styles from "./projects.module.scss";
+import ProjectList from "./ProjectList";
 
 const Projects = () => {
-  return (
-    <div>Projects</div>
-  )
-}
+  const List = ProjectList.map((project) => <Card {...project} />);
 
-export default Projects
+  return (
+    <div className={Styles.bg}>
+      <h1>PROJECTS</h1>
+      <div className={Styles.projects}>{List}</div>
+    </div>
+  );
+};
+
+export default Projects;

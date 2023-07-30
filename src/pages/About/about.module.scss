@@ -1,90 +1,39 @@
-.about {
+.bg {
   min-width: 100%;
   min-height: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  border: 1px solid orange;
-
-  .aboutImg {
-    width: 50%;
-    // border: 1px solid black;
-    // margin: 10px;
-  }
-  .aboutInfo {
-    width: 70%;
-    // border: 1px solid black;
-    margin: 30px;
-    font-size: 11px;
-    color: var(--secondary-color);
-  }
-
-}
-.skills {
-  .skillHeading {
-    color: var(--secondary-color);
-    
-    text-align: center;
-  }
-  .skillbodybig{
-    display: none;
-  }
-  .skillbody {
-    color: var(--secondary-color);
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    li{
-      margin: 0 8px 0 8px;
+  align-content: center;
+  background-image: url("../../assets/bg.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .about {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    p {
+      text-align: center;
+      font-size: 5vw;
+      padding: 20px;
+      span {
+        color: var(--accent-color);
+      }
     }
   }
 }
 
 @media (min-width: 768px) {
-  .about {
-    min-width: 100%;
-    min-height: 100%;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid blue;
+  .bg {
+    .about {
+      p{
+        font-size: 3vw;
 
-    .aboutInfo {
-      width: 70%;
-      // border: 1px solid black;
-      height: 50%;
-      margin: 20px;
-      font-size: 15px;
-      color: var(--secondary-color);
-      padding: 20px;
-    }
-  }
-
-  .skills {
-    .skillHeading {
-      color: var(--secondary-color);
-      text-align: center;
-      font-size: large;
-    }
-
-    .skillbody{
-      display: none;
-    }
-    .skillbodybig {
-      color: var(--secondary-color);
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      margin: auto;
-      width: 50%;
-      margin-bottom: 0;
-      li{
-        margin: 10px 8px 10px 8px;
-        display: inline;
+        span {
+          color: var(--accent-color);
+        }
       }
     }
   }

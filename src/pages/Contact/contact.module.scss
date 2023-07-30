@@ -1,0 +1,20 @@
+.bg {
+  min-height: 100%;
+  min-width: 100%;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-image: url("../../assets/bg.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  div {
+    margin: auto;
+    div {
+      margin: 20px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

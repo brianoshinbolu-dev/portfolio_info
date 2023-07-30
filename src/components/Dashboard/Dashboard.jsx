@@ -63,6 +63,9 @@ const Dashboard = () => {
             <Link to="/about">About me</Link>
           </li>
           <li>
+            <Link to="/skills">Skills</Link>
+          </li>
+          <li>
             <Link to="/projects">Projects</Link>
           </li >
           <li>
@@ -72,10 +75,22 @@ const Dashboard = () => {
 
         <div className={Styles.socials}>
           <span>
+          <a
+            href="https://www.linkedin.com/in/brian-oshinbolu/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <BsLinkedin size="30px" />
+            </a>
           </span>
           <span>
+          <a
+            href="https://github.com/brianoshinbolu-dev"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <FaGithubSquare size="35px" />
+            </a>
           </span>
         </div>
       </div>
